@@ -1,0 +1,25 @@
+{
+  "name": "instalytics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./public/styles.css -o ./public/output.css --minify",
+    "dev": "npx tailwindcss -i ./public/styles.css -o ./public/output.css --watch & http-server public -p 3000",
+    "start": "npm run build && electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.2.0",
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.13",
+    "postcss": "^8.4.47",
+    "realm": "^12.13.1",
+    "tailwindcss": "^3.4.13"
+  }
+}
